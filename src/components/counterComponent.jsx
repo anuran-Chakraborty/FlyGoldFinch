@@ -19,9 +19,9 @@ class CounterComponent extends Component {
         return (
             <React.Fragment>
                 
-                <button class="button increment" onClick={e=>this.incrementCount(e)}>+</button>
-                <button class="button decrement" onClick={e=>this.decrementCount(e)}>-</button>
-                <span class="counterValue">{CounterStore.getCounter}</span>
+                <button className="button increment" onClick={e=>this.incrementCount(e)}>+</button>
+                <button className="button decrement" onClick={e=>this.decrementCount(e)}>-</button>
+                <span className="counterValue">{CounterStore.getCounter}</span>
             </React.Fragment>
         );
     }

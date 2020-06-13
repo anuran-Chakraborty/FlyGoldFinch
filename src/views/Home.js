@@ -8,7 +8,7 @@ class Home extends Component {
         return (
             <React.Fragment>
                 <Navbar nextLink="/time" nextPage="2"></Navbar>
-                <div className="center">
+                <div>
                     <CounterComponent />
                 </div>
             </React.Fragment>
