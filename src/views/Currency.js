@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from '../components/navbar'
+import Navbar from '../components/navbar';
+import CurrencyComponent from '../components/currencyComponent';
 
 class Currency extends Component {
 
@@ -11,6 +12,7 @@ class Currency extends Component {
                     prevPage="3"
                     nextLink="/"
                     nextPage="1"></Navbar>
+                    <CurrencyComponent></CurrencyComponent>
             </React.Fragment>
         );
     }

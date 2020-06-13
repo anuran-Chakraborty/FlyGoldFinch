@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/navbar'
+import DataComponent from "../components/dataComponent";
 
 class Data extends Component {
 
@@ -11,6 +12,7 @@ class Data extends Component {
                     prevPage="2"
                     nextLink="/currency"
                     nextPage="4"></Navbar>
+                    <DataComponent></DataComponent>
             </React.Fragment>
         );
     }
