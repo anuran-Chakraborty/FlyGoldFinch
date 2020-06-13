@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import DataCard from "./dataCard";
 import dataRequest from "../services/dataRequest";
 import { observer, inject } from "mobx-react";
+import "../styles/dataCard.css"
 
 @inject('CounterStore')
 @observer
@@ -14,7 +15,7 @@ class DataComponent extends Component {
                         <h1>Loading...</h1>
                     </div>
                 ) : (
-                    <div>
+                    <div className="nameList">
                         {this.props.CounterStore.getNameList.map((data) => (
                             <DataCard
                                 key={data.email}
