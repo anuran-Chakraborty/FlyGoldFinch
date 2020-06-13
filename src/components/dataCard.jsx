@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import "../styles/dataCard.css";
 
 class DataCard extends Component {
-    
-    render() { 
-        return ( 
+    render() {
+        return (
             <React.Fragment>
-                {this.props.first+" "+this.props.last}
-                <br></br>
+                <div className="card"> {this.props.first + " " + this.props.last} </div>
             </React.Fragment>
-         );
+        );
     }
 
-    componentDidMount(){
-
-    }
-
-
+    componentDidMount() {}
 }
- 
+
 export default DataCard;

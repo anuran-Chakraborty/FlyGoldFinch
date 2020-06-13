@@ -1,0 +1,26 @@
+.amount{
+    padding:10px;
+    margin: 10px;
+}
+
+.currency{
+    padding:10px;
+    margin: 10px;
+}
+
+.convert-btn{
+    padding:10px;
+    margin: 10px;
+    background-color:rgb(219, 209, 114);
+    border:thin;
+    font-size: large;
+    font-weight: bold;
+}
+
+.currency-form{
+    font-size: large;
+}
+
+.error{
+    color:red;  
+}

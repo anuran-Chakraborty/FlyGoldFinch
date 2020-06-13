@@ -6,7 +6,7 @@
     text-decoration: none;
     font-size: 18px;
     float: right;
-    color:white;
+    color: white;
 }
 
 .prevBtn {
@@ -17,10 +17,13 @@
     text-decoration: none;
     font-size: 18px;
     float: left;
-    color:white;
+    color: white;
 }
 
 .nav {
     background-color: rgb(139, 214, 104);
     overflow: hidden;
-  }
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import Navbar from '../components/navbar'
+import React, { Component } from "react";
+import Navbar from "../components/navbar";
 import DataComponent from "../components/dataComponent";
 
 class Data extends Component {
-
-    render() { 
+    render() {
         return (
             <React.Fragment>
                 <Navbar
@@ -12,10 +11,12 @@ class Data extends Component {
                     prevPage="2"
                     nextLink="/currency"
                     nextPage="4"></Navbar>
+                <div className="main">
                     <DataComponent></DataComponent>
+                </div>
             </React.Fragment>
         );
     }
 }
- 
+
 export default Data;

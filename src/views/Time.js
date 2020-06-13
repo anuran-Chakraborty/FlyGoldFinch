@@ -13,7 +13,7 @@ class Time extends Component {
                     prevPage="1"
                     nextLink="/data"
                     nextPage="3"></Navbar>
-                <div className="timeComp">
+                <div className="main timeComp">
                 <TimeComponent></TimeComponent>
                 </div>
             </React.Fragment>
