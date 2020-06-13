@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 
-class TimeComponent extends Component {
-    state = {  }
+class DataComponent extends Component {
+    
     render() { 
         return ( 
-            <h1>Data</h1>
+            <React.Fragment>
+
+            </React.Fragment>
          );
     }
+
+    componentDidMount(){
+        
+    }
+
+
 }
  
-export default TimeComponent;
+export default DataComponent;
