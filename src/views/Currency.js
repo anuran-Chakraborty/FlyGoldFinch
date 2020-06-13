@@ -10,7 +10,7 @@ class Currency extends Component {
                 <Navbar
                     prevLink="/data"
                     prevPage="3"
-                    nextLink="/"
+                    nextLink="/home"
                     nextPage="1"></Navbar>
                     <CurrencyComponent></CurrencyComponent>
             </React.Fragment>

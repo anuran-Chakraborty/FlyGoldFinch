@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Home from './views/Home';
 import Time from './views/Time';
 import Data from './views/Data';
@@ -11,7 +11,8 @@ function App() {
     <Router>
     <div className="App">
       <Switch>
-        <Route exact path="/" component={Home}></Route>
+        <Redirect exact from="/" to="/home" />
+        <Route exact path="/home" component={Home}></Route>
         <Route exact path="/time" component={Time}></Route>
         <Route exact path="/data" component={Data}></Route>
         <Route exact path="/currency" component={Currency}></Route>

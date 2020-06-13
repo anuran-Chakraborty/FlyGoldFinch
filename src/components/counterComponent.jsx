@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {inject, observer} from "mobx-react";
+import "../styles/counter.css"
 
 @inject('CounterStore')
 @observer
@@ -17,9 +18,10 @@ class CounterComponent extends Component {
         const {CounterStore}=this.props;
         return (
             <React.Fragment>
-                <span>{CounterStore.getCounter}</span>
-                <button onClick={e=>this.incrementCount(e)}>+</button>
-                <button onClick={e=>this.decrementCount(e)}>-</button>
+                
+                <button class="button increment" onClick={e=>this.incrementCount(e)}>+</button>
+                <button class="button decrement" onClick={e=>this.decrementCount(e)}>-</button>
+                <span class="counterValue">{CounterStore.getCounter}</span>
             </React.Fragment>
         );
     }

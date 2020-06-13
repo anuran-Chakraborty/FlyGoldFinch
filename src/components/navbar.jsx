@@ -1,12 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../styles/navbar.css"
 
-const btnStyle={
-    margin:"2px"
-};
 class Navbar extends Component {
-
-    
 
     render() {
         var btnPrev=null;
@@ -14,7 +10,7 @@ class Navbar extends Component {
             // If the previous link is set then render this button
             btnPrev = (
                 <Link to={this.props.prevLink}>
-                    <button style={btnStyle}>Goto Page {this.props.prevPage}</button>
+                    <button className="prevBtn">&lt; Goto Page {this.props.prevPage}</button>
                 </Link>
             );
         }
@@ -24,7 +20,7 @@ class Navbar extends Component {
             // If the next link is set then render this button
             btnNext = (
                 <Link to={this.props.nextLink}>
-                    <button style={btnStyle}>Goto Page {this.props.nextPage}</button>
+                    <button className="nextBtn">Goto Page {this.props.nextPage} &gt;</button>
                 </Link>
             );
         }
