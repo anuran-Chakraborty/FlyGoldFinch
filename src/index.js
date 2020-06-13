@@ -7,7 +7,7 @@ import {Provider} from 'mobx-react';
 import CounterStore from "./store/counterStore"
 
 ReactDOM.render(
-  <Provider>
+  <Provider CounterStore={CounterStore}>
     <App />
   </Provider>,
   document.getElementById('root')
