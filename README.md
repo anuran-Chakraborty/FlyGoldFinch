@@ -1,8 +1,8 @@
 This is the coding task for Fly Goldfinch.
 
 ## How to run
-At first install the required packages bu running
-`npm install`
+At first install the required packages by running
+`npm install` from the project root
 
 Then in order to run the app run
 `npm start`
