@@ -6,6 +6,8 @@ import { observer, inject } from "mobx-react";
 @inject("CounterStore")
 @observer
 class CurrencyComponent extends Component {
+
+    // Function to send a request to the api endpoint and update the converted currency
     async convertCurrency() {
         if (this.fromVal.value <= 0) {
             this.props.CounterStore.currencyError("Value must be positive");

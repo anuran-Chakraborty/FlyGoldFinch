@@ -16,6 +16,7 @@ class TimeComponent extends Component {
         var dateString = new Date(new Date().getTime()).toLocaleTimeString();
         this.props.CounterStore.updateTime(dateString);
 
+        // Update the time every second
         this.updateInterval = setInterval(() => {
             var dateString = new Date(
                 new Date().getTime(),

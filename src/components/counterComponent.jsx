@@ -6,10 +6,12 @@ import "../styles/counter.css"
 @observer
 class CounterComponent extends Component {
 
+    //Function to increment the counter
     incrementCount(e){
         this.props.CounterStore.incrementCounter();
     }
 
+    //Function to increment the counter
     decrementCount(e){
         this.props.CounterStore.decrementCounter();
     }
